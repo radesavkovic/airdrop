@@ -1,0 +1,52 @@
+{
+  "name": "onboard-notify-react",
+  "version": "0.14.2",
+  "dependencies": {
+    "@web3-onboard/fortmatic": "^2.0.0",
+    "@web3-onboard/gnosis": "^2.0.1",
+    "@web3-onboard/injected-wallets": "^2.0.1",
+    "@web3-onboard/keepkey": "^2.0.0",
+    "@web3-onboard/keystone": "^2.0.0",
+    "@web3-onboard/ledger": "^2.0.0",
+    "@web3-onboard/portis": "^2.0.0",
+    "@web3-onboard/react": "^2.0.3",
+    "@web3-onboard/torus": "^2.0.0",
+    "@web3-onboard/trezor": "^2.0.1",
+    "@web3-onboard/walletconnect": "^2.0.1",
+    "@web3-onboard/walletlink": "^2.0.0",
+    "bnc-notify": "^1.9.4",
+    "bnc-notify-staging": "https://github.com/blocknative/notify#develop",
+    "ethers": "^5.5.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "vconsole": "^3.3.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-staging": "REACT_APP_API_URL=wss://staging.api.blocknative.com/v0 REACT_APP_STAGING=true HTTPS=true react-scripts start",
+    "start-local": "REACT_APP_API_URL=ws://localhost:54100/v0 REACT_APP_STAGING=true HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "build-staging": "REACT_APP_API_URL=wss://staging.api.blocknative.com/v0 REACT_APP_STAGING=true react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
